@@ -22,22 +22,27 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
   }, []);
   const auth = getAuth();
 
-  if(!email || !password){
-    ToastAndroid.show('Lütfen tüm alanları doldurunuz!', ToastAndroid.TOP);
-    return;
-  }
+  const onSignIn = () =>{
+    
+    if(!"email" || !"password"){
+      ToastAndroid.show("Lütfen tüm alanları doldurunuz", ToastAndroid.SHORT)
+    } 
+    else{
+      ToastAndroid.show("Giriş Yapılıyor", ToastAndroid.SHORT)
+    }
+  
   signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    console.log(user);
+    console.log(user)
     // ...
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     console.log(errorMessage, errorCode);
-  });
+  });}
   return (
     <View style={{
       backgroundColor: "#edebe6",
@@ -94,7 +99,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
       </SafeAreaView>
 
      
-     <TouchableOpacity style={{
+     <TouchableOpacity onPress={onSignIn} style={{
        padding: 15,
        backgroundColor: "purple",
         borderRadius: 20,
@@ -108,7 +113,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
         textAlign: 'center',
         color: "white",
       }}>
-        Atla!
+        Giriş Yap
       </Text>
       </TouchableOpacity>
 
@@ -129,7 +134,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
         color: "purple",
         
       }}>
-        Aramıza Katıl!
+        Kayıt Ol
       </Text>
         </TouchableOpacity>
      

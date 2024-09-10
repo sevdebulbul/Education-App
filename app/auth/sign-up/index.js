@@ -30,6 +30,9 @@ export default function SignUp(){
       ToastAndroid.show('Lütfen tüm alanları doldurunuz!', ToastAndroid.TOP);
       return;
     }
+    else{
+      ToastAndroid.show('Hesabınız Oluşturuldu.', ToastAndroid.TOP);
+    }
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed up 
