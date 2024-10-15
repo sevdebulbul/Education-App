@@ -1,0 +1,602 @@
+[
+  {
+    "Id": 1,
+    "Name": "Sabahattin Ali",
+    "Author": "Kürk Mantolu Madonna",
+    "Rating": "4.41"
+  },
+  {
+    "Id": 2,
+    "Name": "Oğuz Atay",
+    "Author": "Tutunamayanlar",
+    "Rating": "4.55"
+  },
+  {
+    "Id": 3,
+    "Name": "Yusuf Atılgan",
+    "Author": "Aylak Adam",
+    "Rating": "4.26"
+  },
+  {
+    "Id": 4,
+    "Name": "İhsan Oktay Anar",
+    "Author": "Puslu Kıtalar Atlası",
+    "Rating": "4.51"
+  },
+  {
+    "Id": 5,
+    "Name": "Ahmet Hamdi Tanpınar",
+    "Author": "Saatleri Ayarlama Enstitüsü",
+    "Rating": "4.40"
+  },
+  {
+    "Id": 6,
+    "Name": "Reşat Nuri Güntekin",
+    "Author": "Çalıkuşu",
+    "Rating": "4.32"
+  },
+  {
+    "Id": 7,
+    "Name": "Orhan Pamuk",
+    "Author": "My Name Is Red",
+    "Rating": "3.87"
+  },
+  {
+    "Id": 8,
+    "Name": "Yaşar Kemal",
+    "Author": "Memed, My Hawk (İnce Memed, #1)",
+    "Rating": "4.49"
+  },
+  {
+    "Id": 9,
+    "Name": "Sabahattin Ali",
+    "Author": "Kuyucaklı Yusuf",
+    "Rating": "4.20"
+  },
+  {
+    "Id": 10,
+    "Name": "Sabahattin Ali",
+    "Author": "İçimizdeki Şeytan",
+    "Rating": "4.31"
+  },
+  {
+    "Id": 11,
+    "Name": "Orhan Pamuk",
+    "Author": "The Black Book",
+    "Rating": "3.92"
+  },
+  {
+    "Id": 12,
+    "Name": "Yusuf Atılgan",
+    "Author": "Anayurt Oteli",
+    "Rating": "3.90"
+  },
+  {
+    "Id": 13,
+    "Name": "Oğuz Atay",
+    "Author": "Tehlikeli Oyunlar",
+    "Rating": "4.60"
+  },
+  {
+    "Id": 14,
+    "Name": "Orhan Veli Kanık",
+    "Author": "Bütün Şiirleri",
+    "Rating": "4.42"
+  },
+  {
+    "Id": 15,
+    "Name": "Orhan Pamuk",
+    "Author": "Snow",
+    "Rating": "3.61"
+  },
+  {
+    "Id": 16,
+    "Name": "Oğuz Atay",
+    "Author": "Korkuyu Beklerken",
+    "Rating": "4.37"
+  },
+  {
+    "Id": 17,
+    "Name": "Cemal Süreya",
+    "Author": "Sevda Sözleri",
+    "Rating": "4.45"
+  },
+  {
+    "Id": 18,
+    "Name": "Peyami Safa",
+    "Author": "Dokuzuncu Hariciye Koğuşu",
+    "Rating": "4.03"
+  },
+  {
+    "Id": 19,
+    "Name": "Barış Bıçakçı",
+    "Author": "Bizim Büyük Çaresizliğimiz",
+    "Rating": "4.14"
+  },
+  {
+    "Id": 20,
+    "Name": "Ahmet Hamdi Tanpınar",
+    "Author": "Huzur",
+    "Rating": "4.27"
+  },
+  {
+    "Id": 21,
+    "Name": "Yakup Kadri Karaosmanoğlu",
+    "Author": "Yaban",
+    "Rating": "3.99"
+  },
+  {
+    "Id": 22,
+    "Name": "Orhan Pamuk",
+    "Author": "The Museum of Innocence",
+    "Rating": "3.78"
+  },
+  {
+    "Id": 23,
+    "Name": "Alper Canıgüz",
+    "Author": "Oğullar ve Rencide Ruhlar (Alper Kamu, #1)",
+    "Rating": "4.17"
+  },
+  {
+    "Id": 24,
+    "Name": "Murat Menteş",
+    "Author": "Dublörün Dilemması",
+    "Rating": "3.98"
+  },
+  {
+    "Id": 25,
+    "Name": "Zülfü Livaneli",
+    "Author": "Serenad",
+    "Rating": "4.38"
+  },
+  {
+    "Id": 26,
+    "Name": "İhsan Oktay Anar",
+    "Author": "Suskunlar",
+    "Rating": "4.36"
+  },
+  {
+    "Id": 27,
+    "Name": "Rıfat Ilgaz",
+    "Author": "Hababam Sınıfı",
+    "Rating": "4.31"
+  },
+  {
+    "Id": 28,
+    "Name": "Orhan Pamuk",
+    "Author": "The White Castle",
+    "Rating": "3.48"
+  },
+  {
+    "Id": 29,
+    "Name": "Nâzım Hikmet",
+    "Author": "Poems of Nazım Hikmet",
+    "Rating": "4.50"
+  },
+  {
+    "Id": 30,
+    "Name": "Latife Tekin",
+    "Author": "Sevgili Arsız Ölüm",
+    "Rating": "4.09"
+  },
+  {
+    "Id": 31,
+    "Name": "Hakan Günday",
+    "Author": "Kinyas ve Kayra",
+    "Rating": "4.06"
+  },
+  {
+    "Id": 32,
+    "Name": "Hasan Ali Toptaş",
+    "Author": "Gölgesizler",
+    "Rating": "4.08"
+  },
+  {
+    "Id": 33,
+    "Name": "Emrah Serbes",
+    "Author": "Erken Kaybedenler",
+    "Rating": "4.02"
+  },
+  {
+    "Id": 34,
+    "Name": "Orhan Pamuk",
+    "Author": "Sessiz Ev",
+    "Rating": "3.74"
+  },
+  {
+    "Id": 35,
+    "Name": "İhsan Oktay Anar",
+    "Author": "Efrâsiyâb'ın Hikâyeleri",
+    "Rating": "4.14"
+  },
+  {
+    "Id": 36,
+    "Name": "Elif Shafak",
+    "Author": "The Bastard of Istanbul",
+    "Rating": "3.87"
+  },
+  {
+    "Id": 37,
+    "Name": "Orhan Pamuk",
+    "Author": "The New Life",
+    "Rating": "3.56"
+  },
+  {
+    "Id": 38,
+    "Name": "Halide Edib Adıvar",
+    "Author": "Sinekli Bakkal",
+    "Rating": "3.89"
+  },
+  {
+    "Id": 39,
+    "Name": "Turgut Uyar",
+    "Author": "Büyük Saat - Bütün Şiirleri",
+    "Rating": "4.60"
+  },
+  {
+    "Id": 40,
+    "Name": "Aziz Nesin",
+    "Author": "Şimdiki Çocuklar Harika",
+    "Rating": "4.27"
+  },
+  {
+    "Id": 41,
+    "Name": "Orhan Pamuk",
+    "Author": "Istanbul: Memories and the City",
+    "Rating": "3.82"
+  },
+  {
+    "Id": 42,
+    "Name": "Buket Uzuner",
+    "Author": "Kumral Ada Mavi Tuna",
+    "Rating": "4.08"
+  },
+  {
+    "Id": 43,
+    "Name": "Mustafa Kemal Atatürk",
+    "Author": "Nutuk",
+    "Rating": "4.81"
+  },
+  {
+    "Id": 44,
+    "Name": "Orhan Pamuk",
+    "Author": "Cevdet Bey ve Oğulları",
+    "Rating": "3.97"
+  },
+  {
+    "Id": 45,
+    "Name": "Murat Menteş",
+    "Author": "Ruhi Mücerret",
+    "Rating": "3.77"
+  },
+  {
+    "Id": 46,
+    "Name": "Nâzım Hikmet",
+    "Author": "Human Landscapes from My Country: An Epic Novel in Verse",
+    "Rating": "4.56"
+  },
+  {
+    "Id": 47,
+    "Name": "Peyami Safa",
+    "Author": "Yalnızız",
+    "Rating": "4.30"
+  },
+  {
+    "Id": 48,
+    "Name": "Barış Bıçakçı",
+    "Author": "Sinek Isırıklarının Müellifi",
+    "Rating": "3.99"
+  },
+  {
+    "Id": 49,
+    "Name": "Aziz Nesin",
+    "Author": "Yaşar Ne Yaşar Ne Yaşamaz",
+    "Rating": "4.27"
+  },
+  {
+    "Id": 50,
+    "Name": "Emrah Serbes",
+    "Author": "Her Temas İz Bırakır",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 51,
+    "Name": "Reşat Nuri Güntekin",
+    "Author": "Yaprak Dökümü",
+    "Rating": "3.71"
+  },
+  {
+    "Id": 52,
+    "Name": "Elif Shafak",
+    "Author": "The Forty Rules of Love",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 53,
+    "Name": "Sait Faik Abasıyanık",
+    "Author": "Alemdağ'da Var Bir Yılan",
+    "Rating": "4.19"
+  },
+  {
+    "Id": 54,
+    "Name": "Zülfü Livaneli",
+    "Author": "Bliss",
+    "Rating": "3.98"
+  },
+  {
+    "Id": 55,
+    "Name": "Erdal Öz",
+    "Author": "Gülünün Solduğu Akşam",
+    "Rating": "4.35"
+  },
+  {
+    "Id": 56,
+    "Name": "Füruzan",
+    "Author": "Parasız Yatılı",
+    "Rating": "4.11"
+  },
+  {
+    "Id": 57,
+    "Name": "Gündüz Vassaf",
+    "Author": "Cehenneme Övgü: Gündelik Hayatta Totalitarizm",
+    "Rating": "4.30"
+  },
+  {
+    "Id": 58,
+    "Name": "Tezer Özlü",
+    "Author": "Yaşamın Ucuna Yolculuk",
+    "Rating": "4.04"
+  },
+  {
+    "Id": 59,
+    "Name": "Murat Uyurkulak",
+    "Author": "Tol",
+    "Rating": "3.82"
+  },
+  {
+    "Id": 60,
+    "Name": "Hakan Günday",
+    "Author": "Az",
+    "Rating": "4.06"
+  },
+  {
+    "Id": 61,
+    "Name": "Ferit Edgü",
+    "Author": "Hakkâri'de Bir Mevsim",
+    "Rating": "4.46"
+  },
+  {
+    "Id": 62,
+    "Name": "Yaşar Kemal",
+    "Author": "Ağrıdağı Efsanesi",
+    "Rating": "4.18"
+  },
+  {
+    "Id": 63,
+    "Name": "Ahmed Arif",
+    "Author": "Hasretinden Prangalar Eskittim",
+    "Rating": "4.41"
+  },
+  {
+    "Id": 64,
+    "Name": "Attilâ İlhan",
+    "Author": "Ben Sana Mecburum",
+    "Rating": "4.20"
+  },
+  {
+    "Id": 65,
+    "Name": "Turgut Özakman",
+    "Author": "Şu Çılgın Türkler",
+    "Rating": "4.21"
+  },
+  {
+    "Id": 66,
+    "Name": "Adalet Ağaoğlu",
+    "Author": "Ölmeye Yatmak",
+    "Rating": "4.21"
+  },
+  {
+    "Id": 67,
+    "Name": "Alper Canıgüz",
+    "Author": "Tatlı Rüyalar",
+    "Rating": "3.95"
+  },
+  {
+    "Id": 68,
+    "Name": "Reşat Nuri Güntekin",
+    "Author": "Acımak",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 69,
+    "Name": "Murathan Mungan",
+    "Author": "Üç Aynalı Kırk Oda",
+    "Rating": "3.89"
+  },
+  {
+    "Id": 70,
+    "Name": "Kemal Tahir",
+    "Author": "Esir Şehrin İnsanları (Esir Şehir Üçlemesi, #1)",
+    "Rating": "4.28"
+  },
+  {
+    "Id": 71,
+    "Name": "Tezer Özlü",
+    "Author": "Çocukluğun Soğuk Geceleri",
+    "Rating": "3.89"
+  },
+  {
+    "Id": 72,
+    "Name": "Murat Menteş",
+    "Author": "Korkma Ben Varım",
+    "Rating": "4.11"
+  },
+  {
+    "Id": 73,
+    "Name": "Yaşar Kemal",
+    "Author": "They Burn the Thistles (İnce Memed, #2)",
+    "Rating": "4.52"
+  },
+  {
+    "Id": 74,
+    "Name": "Halid Ziya Uşaklıgil",
+    "Author": "Aşk-ı Memnu",
+    "Rating": "3.93"
+  },
+  {
+    "Id": 75,
+    "Name": "Kemal Tahir",
+    "Author": "Devlet Ana",
+    "Rating": "4.24"
+  },
+  {
+    "Id": 76,
+    "Name": "Yaşar Kemal",
+    "Author": "İnce Memed 3 (İnce Memed, #3)",
+    "Rating": "4.56"
+  },
+  {
+    "Id": 77,
+    "Name": "Sait Faik Abasıyanık",
+    "Author": "Lüzumsuz Adam",
+    "Rating": "4.05"
+  },
+  {
+    "Id": 78,
+    "Name": "Ömer Seyfettin",
+    "Author": "Kaşağı",
+    "Rating": "3.49"
+  },
+  {
+    "Id": 78,
+    "Name": "Yaşar Kemal",
+    "Author": "İnce Memed 4 (İnce Memed, #4)",
+    "Rating": "4.61"
+  },
+  {
+    "Id": 80,
+    "Name": "İhsan Oktay Anar",
+    "Author": "Amat",
+    "Rating": "4.30"
+  },
+  {
+    "Id": 81,
+    "Name": "Zülfü Livaneli",
+    "Author": "Son Ada",
+    "Rating": "4.26"
+  },
+  {
+    "Id": 82,
+    "Name": "Alper Canıgüz",
+    "Author": "Cehennem Çiçeği (Alper Kamu, #2)",
+    "Rating": "4.34"
+  },
+  {
+    "Id": 83,
+    "Name": "Vedat Türkali",
+    "Author": "Bir Gün Tek Başına",
+    "Rating": "4.43"
+  },
+  {
+    "Id": 84,
+    "Name": "İhsan Oktay Anar",
+    "Author": "Yedinci Gün",
+    "Rating": "3.84"
+  },
+  {
+    "Id": 85,
+    "Name": "Sevgi Soysal",
+    "Author": "Yenişehir'de Bir Öğle Vakti",
+    "Rating": "4.32"
+  },
+  {
+    "Id": 86,
+    "Name": "Necip Fazıl Kısakürek",
+    "Author": "Çile",
+    "Rating": "4.26"
+  },
+  {
+    "Id": 87,
+    "Name": "Tarık Buğra",
+    "Author": "Küçük Ağa",
+    "Rating": "3.86"
+  },
+  {
+    "Id": 88,
+    "Name": "Elif Shafak",
+    "Author": "Mahrem",
+    "Rating": "3.44"
+  },
+  {
+    "Id": 89,
+    "Name": "Ece Ayhan",
+    "Author": "Bütün Yort Savul'lar! 1954-1997 - Toplu Şiirler",
+    "Rating": "4.27"
+  },
+  {
+    "Id": 90,
+    "Name": "Ayşe Kulin",
+    "Author": "Adı: Aylin",
+    "Rating": "3.90"
+  },
+  {
+    "Id": 91,
+    "Name": "Oruç Aruoba",
+    "Author": "ile",
+    "Rating": "4.30"
+  },
+  {
+    "Id": 92,
+    "Name": "Orhan Kemal",
+    "Author": "72. Koğuş",
+    "Rating": "3.91"
+  },
+  {
+    "Id": 93,
+    "Name": "Yaşar Kemal",
+    "Author": "Fırat Suyu Kan Akıyor Baksana (Bir Ada Hikayesi, #1)",
+    "Rating": "4.42"
+  },
+  {
+    "Id": 94,
+    "Name": "Edip Cansever",
+    "Author": "Yerçekimli Karanfil (Toplu Şiirleri, #1)",
+    "Rating": "4.53"
+  },
+  {
+    "Id": 95,
+    "Name": "Edip Cansever",
+    "Author": "Ben Ruhi Bey Nasılım",
+    "Rating": "4.47"
+  },
+  {
+    "Id": 96,
+    "Name": "İhsan Oktay Anar",
+    "Author": "Galîz Kahraman",
+    "Rating": "3.81"
+  },
+  {
+    "Id": 97,
+    "Name": "Yaşar Kemal",
+    "Author": "Iron Earth, Copper Sky",
+    "Rating": "4.33"
+  },
+  {
+    "Id": 98,
+    "Name": "Cahit Sıtkı Tarancı",
+    "Author": "Otuz Beş Yaş - Bütün Şiirleri",
+    "Rating": "4.09"
+  },
+  {
+    "Id": 99,
+    "Name": "Emrah Serbes",
+    "Author": "Son Hafriyat",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 100,
+    "Name": "İskender Pala",
+    "Author": "Şah & Sultan",
+    "Rating": "4.02"
+  }
+]

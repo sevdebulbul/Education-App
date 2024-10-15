@@ -1,0 +1,602 @@
+[
+  {
+    "Id": 1,
+    "Name": "Ender’s Game (Ender's Saga, #1)",
+    "Author": "Orson Scott Card",
+    "Rating": "4.31"
+  },
+  {
+    "Id": 2,
+    "Name": "Dune (Dune, #1)",
+    "Author": "Frank Herbert",
+    "Rating": "4.28"
+  },
+  {
+    "Id": 3,
+    "Name": "1984",
+    "Author": "George Orwell",
+    "Rating": "4.19"
+  },
+  {
+    "Id": 4,
+    "Name": "Fahrenheit 451",
+    "Author": "Ray Bradbury",
+    "Rating": "3.96"
+  },
+  {
+    "Id": 5,
+    "Name": "Brave New World",
+    "Author": "Aldous Huxley",
+    "Rating": "3.99"
+  },
+  {
+    "Id": 6,
+    "Name": "Foundation (Foundation, #1)",
+    "Author": "Isaac Asimov",
+    "Rating": "4.17"
+  },
+  {
+    "Id": 7,
+    "Name": "A Wrinkle in Time (Time Quintet, #1)",
+    "Author": "Madeleine L'Engle",
+    "Rating": "3.98"
+  },
+  {
+    "Id": 8,
+    "Name": "The Hunger Games (The Hunger Games, #1)",
+    "Author": "Suzanne Collins",
+    "Rating": "4.34"
+  },
+  {
+    "Id": 9,
+    "Name": "The Ultimate Hitchhiker’s Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1-5)",
+    "Author": "Douglas Adams",
+    "Rating": "4.38"
+  },
+  {
+    "Id": 10,
+    "Name": "Slaughterhouse-Five",
+    "Author": "Kurt Vonnegut Jr.",
+    "Rating": "4.10"
+  },
+  {
+    "Id": 11,
+    "Name": "The Giver (The Giver, #1)",
+    "Author": "Lois Lowry",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 12,
+    "Name": "Do Androids Dream of Electric Sheep?",
+    "Author": "Philip K. Dick",
+    "Rating": "4.09"
+  },
+  {
+    "Id": 13,
+    "Name": "Stranger in a Strange Land",
+    "Author": "Robert A. Heinlein",
+    "Rating": "3.92"
+  },
+  {
+    "Id": 14,
+    "Name": "I, Robot (Robot, #0.1)",
+    "Author": "Isaac Asimov",
+    "Rating": "4.21"
+  },
+  {
+    "Id": 15,
+    "Name": "Hyperion (Hyperion Cantos, #1)",
+    "Author": "Dan Simmons",
+    "Rating": "4.27"
+  },
+  {
+    "Id": 16,
+    "Name": "Neuromancer (Sprawl, #1)",
+    "Author": "William Gibson",
+    "Rating": "3.89"
+  },
+  {
+    "Id": 17,
+    "Name": "Animal Farm",
+    "Author": "George Orwell",
+    "Rating": "3.99"
+  },
+  {
+    "Id": 18,
+    "Name": "The Handmaid’s Tale (The Handmaid's Tale, #1)",
+    "Author": "Margaret Atwood",
+    "Rating": "4.14"
+  },
+  {
+    "Id": 19,
+    "Name": "Speaker for the Dead (Ender's Saga, #2)",
+    "Author": "Orson Scott Card",
+    "Rating": "4.10"
+  },
+  {
+    "Id": 20,
+    "Name": "Snow Crash",
+    "Author": "Neal Stephenson",
+    "Rating": "4.02"
+  },
+  {
+    "Id": 21,
+    "Name": "The Stand",
+    "Author": "Stephen         King",
+    "Rating": "4.35"
+  },
+  {
+    "Id": 22,
+    "Name": "The Martian Chronicles",
+    "Author": "Ray Bradbury",
+    "Rating": "4.15"
+  },
+  {
+    "Id": 23,
+    "Name": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+    "Author": "J.R.R. Tolkien",
+    "Rating": "4.39"
+  },
+  {
+    "Id": 24,
+    "Name": "The Foundation Trilogy (Foundation, #1-3)",
+    "Author": "Isaac Asimov",
+    "Rating": "4.42"
+  },
+  {
+    "Id": 25,
+    "Name": "Jurassic Park (Jurassic Park, #1)",
+    "Author": "Michael Crichton",
+    "Rating": "4.11"
+  },
+  {
+    "Id": 26,
+    "Name": "2001: A Space Odyssey (Space Odyssey, #1)",
+    "Author": "Arthur C. Clarke",
+    "Rating": "4.17"
+  },
+  {
+    "Id": 27,
+    "Name": "The Time Machine",
+    "Author": "H.G. Wells",
+    "Rating": "3.89"
+  },
+  {
+    "Id": 28,
+    "Name": "The Lord of the Rings (Middle Earth, #2-4)",
+    "Author": "J.R.R. Tolkien",
+    "Rating": "4.53"
+  },
+  {
+    "Id": 29,
+    "Name": "The Left Hand of Darkness",
+    "Author": "Ursula K. Le Guin",
+    "Rating": "4.10"
+  },
+  {
+    "Id": 30,
+    "Name": "Starship Troopers",
+    "Author": "Robert A. Heinlein",
+    "Rating": "4.01"
+  },
+  {
+    "Id": 31,
+    "Name": "Flowers for Algernon",
+    "Author": "Daniel Keyes",
+    "Rating": "4.22"
+  },
+  {
+    "Id": 32,
+    "Name": "Harry Potter and the Sorcerer's Stone (Harry Potter, #1)",
+    "Author": "J.K. Rowling",
+    "Rating": "4.47"
+  },
+  {
+    "Id": 33,
+    "Name": "The Chain Between Worlds (The Lost Artefacts #1)",
+    "Author": "Johnathon Nicolaou",
+    "Rating": "4.46"
+  },
+  {
+    "Id": 34,
+    "Name": "The War of the Worlds",
+    "Author": "H.G. Wells",
+    "Rating": "3.83"
+  },
+  {
+    "Id": 35,
+    "Name": "The Name of the Wind (The Kingkiller Chronicle, #1)",
+    "Author": "Patrick Rothfuss",
+    "Rating": "4.52"
+  },
+  {
+    "Id": 36,
+    "Name": "Ender's Shadow (The Shadow Series, #1)",
+    "Author": "Orson Scott Card",
+    "Rating": "4.32"
+  },
+  {
+    "Id": 37,
+    "Name": "Ready Player One (Ready Player One, #1)",
+    "Author": "Ernest Cline",
+    "Rating": "4.23"
+  },
+  {
+    "Id": 38,
+    "Name": "Cat’s Cradle",
+    "Author": "Kurt Vonnegut Jr.",
+    "Rating": "4.15"
+  },
+  {
+    "Id": 39,
+    "Name": "Childhood’s End",
+    "Author": "Arthur C. Clarke",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 40,
+    "Name": "The Moon Is a Harsh Mistress",
+    "Author": "Robert A. Heinlein",
+    "Rating": "4.15"
+  },
+  {
+    "Id": 41,
+    "Name": "The Forever War (The Forever War, #1)",
+    "Author": "Joe Haldeman",
+    "Rating": "4.14"
+  },
+  {
+    "Id": 42,
+    "Name": "A Canticle for Leibowitz (St. Leibowitz, #1)",
+    "Author": "Walter M. Miller Jr.",
+    "Rating": "3.98"
+  },
+  {
+    "Id": 43,
+    "Name": "Rendezvous with Rama (Rama, #1)",
+    "Author": "Arthur C. Clarke",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 44,
+    "Name": "The Host (The Host, #1)",
+    "Author": "Stephenie Meyer",
+    "Rating": "3.86"
+  },
+  {
+    "Id": 45,
+    "Name": "The Time Traveler’s Wife",
+    "Author": "Audrey Niffenegger",
+    "Rating": "4.00"
+  },
+  {
+    "Id": 46,
+    "Name": "Old Man's War (Old Man's War, #1)",
+    "Author": "John Scalzi",
+    "Rating": "4.23"
+  },
+  {
+    "Id": 47,
+    "Name": "Dragonflight (Dragonriders of Pern, #1)",
+    "Author": "Anne McCaffrey",
+    "Rating": "4.08"
+  },
+  {
+    "Id": 48,
+    "Name": "The Hitchhiker’s Guide to the Galaxy (The Hitchhiker's Guide to the Galaxy, #1)",
+    "Author": "Douglas Adams",
+    "Rating": "4.23"
+  },
+  {
+    "Id": 49,
+    "Name": "Ringworld (Ringworld, #1)",
+    "Author": "Larry Niven",
+    "Rating": "3.94"
+  },
+  {
+    "Id": 50,
+    "Name": "Contact",
+    "Author": "Carl Sagan",
+    "Rating": "4.15"
+  },
+  {
+    "Id": 51,
+    "Name": "Twenty Thousand Leagues Under the Sea (Captain Nemo, #2)",
+    "Author": "Jules Verne",
+    "Rating": "3.89"
+  },
+  {
+    "Id": 52,
+    "Name": "American Gods",
+    "Author": "Neil Gaiman",
+    "Rating": "4.11"
+  },
+  {
+    "Id": 53,
+    "Name": "The Dispossessed: An Ambiguous Utopia",
+    "Author": "Ursula K. Le Guin",
+    "Rating": "4.25"
+  },
+  {
+    "Id": 54,
+    "Name": "Frankenstein: The 1818 Text",
+    "Author": "Mary Wollstonecraft Shelley",
+    "Rating": "3.88"
+  },
+  {
+    "Id": 55,
+    "Name": "The Hobbit (The Lord of the Rings, #0)",
+    "Author": "J.R.R. Tolkien",
+    "Rating": "4.29"
+  },
+  {
+    "Id": 56,
+    "Name": "The Diamond Age: Or, a Young Lady's Illustrated Primer",
+    "Author": "Neal Stephenson",
+    "Rating": "4.16"
+  },
+  {
+    "Id": 57,
+    "Name": "I Am Legend and Other Stories",
+    "Author": "Richard Matheson",
+    "Rating": "4.00"
+  },
+  {
+    "Id": 58,
+    "Name": "World War Z: An Oral History of the Zombie War",
+    "Author": "Max Brooks",
+    "Rating": "4.02"
+  },
+  {
+    "Id": 59,
+    "Name": "The Sparrow (The Sparrow, #1)",
+    "Author": "Mary Doria Russell",
+    "Rating": "4.14"
+  },
+  {
+    "Id": 60,
+    "Name": "Never Let Me Go",
+    "Author": "Kazuo Ishiguro",
+    "Rating": "3.85"
+  },
+  {
+    "Id": 61,
+    "Name": "The Man in the High Castle",
+    "Author": "Philip K. Dick",
+    "Rating": "3.60"
+  },
+  {
+    "Id": 62,
+    "Name": "Ubik",
+    "Author": "Philip K. Dick",
+    "Rating": "4.11"
+  },
+  {
+    "Id": 63,
+    "Name": "Uglies (Uglies, #1)",
+    "Author": "Scott Westerfeld",
+    "Rating": "3.85"
+  },
+  {
+    "Id": 64,
+    "Name": "The Andromeda Strain (Andromeda, #1)",
+    "Author": "Michael Crichton",
+    "Rating": "3.91"
+  },
+  {
+    "Id": 65,
+    "Name": "The Mote in God's Eye (Moties, #1)",
+    "Author": "Larry Niven",
+    "Rating": "4.07"
+  },
+  {
+    "Id": 66,
+    "Name": "The Martian",
+    "Author": "Andy Weir",
+    "Rating": "4.42"
+  },
+  {
+    "Id": 67,
+    "Name": "The Return of the King (The Lord of the Rings, #3)",
+    "Author": "J.R.R. Tolkien",
+    "Rating": "4.57"
+  },
+  {
+    "Id": 68,
+    "Name": "The Stars My Destination",
+    "Author": "Alfred Bester",
+    "Rating": "4.06"
+  },
+  {
+    "Id": 69,
+    "Name": "The Two Towers (The Lord of the Rings, #2)",
+    "Author": "J.R.R. Tolkien",
+    "Rating": "4.49"
+  },
+  {
+    "Id": 70,
+    "Name": "Oryx and Crake (MaddAddam, #1)",
+    "Author": "Margaret Atwood",
+    "Rating": "4.01"
+  },
+  {
+    "Id": 71,
+    "Name": "Solaris",
+    "Author": "Stanisław Lem",
+    "Rating": "3.99"
+  },
+  {
+    "Id": 72,
+    "Name": "Second Foundation (Foundation, #3)",
+    "Author": "Isaac Asimov",
+    "Rating": "4.27"
+  },
+  {
+    "Id": 73,
+    "Name": "Journey to the Center of the Earth",
+    "Author": "Jules Verne",
+    "Rating": "3.85"
+  },
+  {
+    "Id": 74,
+    "Name": "A Fire Upon the Deep (Zones of Thought, #1)",
+    "Author": "Vernor Vinge",
+    "Rating": "4.14"
+  },
+  {
+    "Id": 75,
+    "Name": "The Day of the Triffids",
+    "Author": "John Wyndham",
+    "Rating": "4.01"
+  },
+  {
+    "Id": 76,
+    "Name": "Doomsday Book (Oxford Time Travel, #1)",
+    "Author": "Connie Willis",
+    "Rating": "4.03"
+  },
+  {
+    "Id": 77,
+    "Name": "The Fall of Hyperion (Hyperion Cantos, #2)",
+    "Author": "Dan Simmons",
+    "Rating": "4.23"
+  },
+  {
+    "Id": 78,
+    "Name": "The Sirens of Titan",
+    "Author": "Kurt Vonnegut Jr.",
+    "Rating": "4.15"
+  },
+  {
+    "Id": 79,
+    "Name": "Red Mars (Mars Trilogy, #1)",
+    "Author": "Kim Stanley Robinson",
+    "Rating": "3.86"
+  },
+  {
+    "Id": 80,
+    "Name": "Timeline",
+    "Author": "Michael Crichton",
+    "Rating": "3.87"
+  },
+  {
+    "Id": 81,
+    "Name": "The Illustrated Man",
+    "Author": "Ray Bradbury",
+    "Rating": "4.13"
+  },
+  {
+    "Id": 82,
+    "Name": "The Caves of Steel (Robot, #1)",
+    "Author": "Isaac Asimov",
+    "Rating": "4.19"
+  },
+  {
+    "Id": 83,
+    "Name": "Foundation and Empire (Foundation, #2)",
+    "Author": "Isaac Asimov",
+    "Rating": "4.22"
+  },
+  {
+    "Id": 84,
+    "Name": "The Invisible Man",
+    "Author": "H.G. Wells",
+    "Rating": "3.63"
+  },
+  {
+    "Id": 85,
+    "Name": "A Game of Thrones (A Song of Ice and Fire, #1)",
+    "Author": "George R.R. Martin",
+    "Rating": "4.44"
+  },
+  {
+    "Id": 86,
+    "Name": "Xenocide (Ender's Saga, #3)",
+    "Author": "Orson Scott Card",
+    "Rating": "3.81"
+  },
+  {
+    "Id": 87,
+    "Name": "The Lathe of Heaven",
+    "Author": "Ursula K. Le Guin",
+    "Rating": "4.12"
+  },
+  {
+    "Id": 88,
+    "Name": "Anathem",
+    "Author": "Neal Stephenson",
+    "Rating": "4.17"
+  },
+  {
+    "Id": 89,
+    "Name": "A Scanner Darkly",
+    "Author": "Philip K. Dick",
+    "Rating": "4.02"
+  },
+  {
+    "Id": 90,
+    "Name": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
+    "Author": "Terry Pratchett",
+    "Rating": "4.26"
+  },
+  {
+    "Id": 91,
+    "Name": "The Player of Games (Culture, #2)",
+    "Author": "Iain M. Banks",
+    "Rating": "4.28"
+  },
+  {
+    "Id": 92,
+    "Name": "The Way of Kings (The Stormlight Archive, #1)",
+    "Author": "Brandon Sanderson",
+    "Rating": "4.66"
+  },
+  {
+    "Id": 93,
+    "Name": "Flatland: A Romance of Many Dimensions",
+    "Author": "Edwin A. Abbott",
+    "Rating": "3.81"
+  },
+  {
+    "Id": 94,
+    "Name": "To Say Nothing of the Dog (Oxford Time Travel, #2)",
+    "Author": "Connie Willis",
+    "Rating": "4.11"
+  },
+  {
+    "Id": 95,
+    "Name": "Altered Carbon (Takeshi Kovacs, #1)",
+    "Author": "Richard K. Morgan",
+    "Rating": "4.04"
+  },
+  {
+    "Id": 96,
+    "Name": "Gateway (Heechee Saga, #1)",
+    "Author": "Frederik Pohl",
+    "Rating": "4.06"
+  },
+  {
+    "Id": 97,
+    "Name": "Kindred",
+    "Author": "Octavia E. Butler",
+    "Rating": "4.30"
+  },
+  {
+    "Id": 98,
+    "Name": "Barrayar (Vorkosigan Saga, #7)",
+    "Author": "Lois McMaster Bujold",
+    "Rating": "4.30"
+  },
+  {
+    "Id": 99,
+    "Name": "The Shadow of the Torturer (The Book of the New Sun, #1)",
+    "Author": "Gene Wolfe",
+    "Rating": "3.83"
+  },
+  {
+    "Id": 100,
+    "Name": "Space Trilogy: Out of the Silent Planet / Perelandra / That Hideous Strength",
+    "Author": "C.S. Lewis",
+    "Rating": "4.18"
+  }
+]

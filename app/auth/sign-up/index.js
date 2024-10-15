@@ -10,6 +10,9 @@ import { useRouter } from 'expo-router';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../../configs/FirebaseConfig';
+import { db } from '../../../configs/FirebaseConfig';
+import { setDoc, doc } from 'firebase/firestore';
+
 
 export default function SignUp(){
   const navigation = useNavigation();
@@ -24,7 +27,7 @@ export default function SignUp(){
     });
   }, []);
 
-  const onCreateAccount = () => {
+  const onCreateAccount = () => { // Hesap oluşturma
 
     if(!email || !password || !nickname){
       ToastAndroid.show('Lütfen tüm alanları doldurunuz!', ToastAndroid.TOP);
@@ -35,46 +38,48 @@ export default function SignUp(){
     }
     createUserWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-    // Signed up 
     const user = userCredential.user;
     console.log(user);
-    // ...
+    router.replace('/screens/(tabs)')
   })
   .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
     console.log(errorMessage,errorCode);
-    // ..
+
   });
   }
+  
+  function addUser(){ // Firestore'a kullanıcı ekleme
+    setDoc(doc(db, "nicknames", nickname), {
+      email: email,
+      nickname: nickname,
+    }).then(() => {
+      console.log("Document successfully written!");
+    }).catch((error) => {
+      console.error("Error writing document: ", error);
+    });
+  }
+
   return (
-    <View style={{
-      backgroundColor: "#edebe6",
-      width: "100%",
-      height: "100%",}}>
-        <TouchableOpacity onPress={()=> router.replace('/auth/sign-in')} style={{
-        marginTop: 50,
-        marginLeft: 20,
-        marginBottom: -50,
-      }}>
-        <MaterialIcons name="arrow-back-ios-new" size={24} color="purple" />
+    <View style={styles.container}>
+        <TouchableOpacity 
+        onPress={()=> router.replace('/auth/sign-in')} // Geri gitme yönlendirmesi
+        style={styles.backbutton}>
+        <MaterialIcons name="arrow-back-ios-new" size={24} color="#345457" />
       </TouchableOpacity>
-      <Text style={{ fontSize: 20, 
-        textAlign: 'center', 
-        marginTop: 60, 
-        color: "purple", 
-        backgroundColor:"#edebe6", fontStyle: "oblique", borderRadius: 20,}}
+      <Text style={styles.headertext}
       >Hemen Kayıt Ol!</Text>
-      <View style={{marginTop: 10}}
-      >
+      <View style={{marginTop: 10}}>
         <Text style={styles.text}>Takma Ad:</Text>
         <TextInput 
           style={styles.input} 
           placeholder='Takma Adınızı Giriniz'
           marginLeft={40}
-          onChangeText={(value)=> setNickname(value)}
+          value={nickname}
+          onChangeText={(nickname)=> setNickname(nickname)} 
           ></TextInput>
-        <View style={{marginTop:-20
+        <SafeAreaView style={{marginTop:-60
           }}>
           <Text style={styles.text}>Email:</Text>
           <TextInput 
@@ -83,9 +88,9 @@ export default function SignUp(){
             marginLeft={40}
             onChangeText={(value)=> setEmail(value)}
           ></TextInput>
-        </View>
+        </SafeAreaView>
         
-        <SafeAreaView style={{marginTop:-40}}>
+        <SafeAreaView style={{marginTop:-60}}>
           <Text style={styles.text}>Şifre:</Text>
           <TextInput 
             style={styles.input} 
@@ -97,41 +102,17 @@ export default function SignUp(){
         </SafeAreaView>
     </View>
 
-      <TouchableOpacity onPress={onCreateAccount} style={{
-       padding: 15,
-       backgroundColor: "purple",
-        borderRadius: 20,
-        marginBottom: 20,
-        marginLeft:30,
-        marginRight:30,
-        
-     }}>
-      <Text style={{
-        fontSize:20,
-        textAlign: 'center',
-        color: "white",
-      }}>
+      <TouchableOpacity onPress={() =>{
+        onCreateAccount();
+        addUser();
+      }} style={styles.button}>
+      <Text style={styles.textbutton}>
         Kayıt Ol
       </Text>
       </TouchableOpacity>
-
       <TouchableOpacity onPress={() => router.replace('/auth/sign-in')}
-      style={{
-        padding: 15,
-        backgroundColor: "#edebe6",
-        borderColor: "purple",
-        borderRadius: 20,
-        marginBottom: 20,
-        marginLeft:30,
-        marginRight:30,
-
-      }}>
-      <Text style={{
-        fontSize:20,
-        textAlign: 'center',
-        color: "purple",
-        
-      }}>
+      style={styles.buttonunderlined}>
+      <Text style={styles.textunderlined}>
         Giriş Yap
       </Text>
         </TouchableOpacity>
@@ -140,19 +121,74 @@ export default function SignUp(){
 }
 
 const styles = StyleSheet.create({
+  container:{
+    backgroundColor: "white",
+    width: "100%",
+    height: "100%",
+    marginTop: 20,
+  },
+  backbutton:{
+    marginTop: 70,
+    marginLeft: 20,
+    marginBottom: -60,
+  },
+  headertext:{
+    fontSize: 20, 
+    textAlign: 'center', 
+    marginTop: 60, 
+    color: "#345457", 
+    backgroundColor:"white", 
+    fontStyle: "oblique", 
+    borderRadius: 20,
+  },
   text: {
     fontSize: 20,
     marginLeft: 40,
     marginTop: 20,
-    color: "purple",
+    color: "#345457",
   },
   input: {
-    width: 300,
+    width: 320,
     height: 40,
     margin: 12,
+    marginLeft: 60,
+    marginRight: -30,
     borderWidth: 1,
     padding: 10,
     borderRadius: 20,
-    borderColor: "purple",
-  }
+    borderColor: "#345457",
+  },
+  button:{
+    padding: 15,
+    backgroundColor: "#345457",
+    borderRadius: 30,
+    marginBottom: 20,
+    marginLeft:50,
+    marginRight:30,
+    marginTop: 20,
+    width: 300,    
+  },
+  textbutton:{
+    fontSize:20,
+    textAlign: 'center',
+    color: "white",
+  },
+  buttonunderlined:{
+    padding: 15,
+    backgroundColor: "white",
+    borderColor: "#345457",
+    borderRadius: 20,
+    marginBottom: 20,
+    marginLeft:30,
+    marginRight:30,
+  },
+  textunderlined:{
+    color: '#345457',
+    fontSize: 16,
+    textAlign: 'center',
+    marginTop: -10,
+    fontFamily: 'Roboto',
+    fontWeight: 'thin',
+    textDecorationLine: 'underline',
+  },
 })
