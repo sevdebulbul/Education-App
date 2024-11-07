@@ -5,14 +5,14 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import { useLocalSearchParams } from 'expo-router';
 
 const CategoryDetail = () => {
-  const { id: categoryId } = useLocalSearchParams(); // Dinamik parametre alımı
+  const { id: categoryId } = useLocalSearchParams();
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchCategoryData = async () => { // Kategoriye göre kitapları çekme
+    const fetchCategoryData = async () => {
       try {
-        const response = await axios.get(`http://192.168.0.30:8080/categories/${categoryId}`);
+        const response = await axios.get(`http://{your-ip-address-here}/categories/${categoryId}`);
         setBooks(response.data);
       } catch (error) {
         console.error('Veri çekilirken hata oluştu:', error);
@@ -26,7 +26,7 @@ const CategoryDetail = () => {
     }
   }, [categoryId]);
 
-  const renderStars = (rating) => { // Yıldızları oluşturma
+  const renderStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       stars.push(
@@ -49,6 +49,7 @@ const CategoryDetail = () => {
       </View>
     );
   }
+
 
   return (
     <View style={styles.container}>

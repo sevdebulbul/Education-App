@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
-const RatingStar = ({ rating, setRating }) => { //Derecelendirme komponenti
+const RatingStar = ({ rating, setRating }) => {
   return (
     <View style={styles.ratingContainer}>
       {[1, 2, 3, 4, 5].map((star) => (
@@ -14,15 +14,15 @@ const RatingStar = ({ rating, setRating }) => { //Derecelendirme komponenti
   );
 };
 
-const BookAdd = () => { //Kitap ekleme ekranı
+const BookAdd = () => {
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
   const [summary, setSummary] = useState('');
   const [rating, setRating] = useState(0);
 
-  const handleSaveBook = async () => { //Kitap kaydetme fonksiyonu
+  const handleSaveBook = async () => {
     try {
-      const response = await axios.post('http://192.168.15.101:8080/newbooks', {
+      const response = await axios.post('http://{your-ip-address-here}/newbooks', {
         title,
         author,
         summary,

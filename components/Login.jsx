@@ -3,8 +3,10 @@ import React from 'react';
 import { StyleSheet } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Image } from 'react-native';
+
 export default function Login() {
   const router = useRouter();
+  
   return (
     <ImageBackground
       source={require('./../assets/images/backgroundeduapp.png')}
@@ -14,7 +16,7 @@ export default function Login() {
       <View style={styles.Overlay}>
         <Image source={require('./../assets/images/booksy.png')}
         />
-        <TouchableOpacity onPress={() => router.push('/auth/sign-in')}> // Yönlendirme
+        <TouchableOpacity onPress={() => router.push('/auth/sign-in')}>
           <View style={styles.ButtonView}>
             <Text style={styles.ButtonText}>Giriş yapın</Text>
           </View>

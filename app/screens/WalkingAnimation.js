@@ -1,4 +1,4 @@
-import { StyleSheet, View, Animated, Image } from 'react-native';
+import { StyleSheet, Text, View, Animated, TouchableOpacity, Image } from 'react-native';
 import React, { useEffect, useRef } from 'react';
 import { auth } from './../../configs/FirebaseConfig';
 import { useRouter } from 'expo-router';
@@ -6,19 +6,21 @@ import { useRouter } from 'expo-router';
 export default function WalkingAnimation() {
   const router = useRouter();
   const user = auth.currentUser;
+
+  
   const pan = useRef(new Animated.Value(0)).current;
   const scale = useRef(new Animated.Value(1)).current;  
 
-  useEffect(() => { // Animasyon
-    Animated.loop( // Döngü
-      Animated.sequence([ // Sıralı animasyonlar
-        Animated.parallel([ // Paralel animasyonlar
-          Animated.timing(pan, { // Pan hareketi
+  useEffect(() => {
+    Animated.loop(
+      Animated.sequence([
+        Animated.parallel([
+          Animated.timing(pan, {
             toValue: 290,
             duration: 20000,
             useNativeDriver: false,
           }),
-          Animated.timing(scale, { 
+          Animated.timing(scale, {
             toValue: 1,
             duration: 0,
             useNativeDriver: false,
@@ -42,7 +44,7 @@ export default function WalkingAnimation() {
 
   return (
     <View style={styles.container}>
-      <Animated.View // Animasyonlu görüntü
+      <Animated.View
         style={[
           styles.imageContainer,
           { 

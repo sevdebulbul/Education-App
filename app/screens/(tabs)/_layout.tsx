@@ -1,14 +1,16 @@
 import {StyleSheet} from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Tabs} from 'expo-router'
 import {FontAwesome, MaterialCommunityIcons} from '@expo/vector-icons'
+import {useState} from 'react'
+import { EventRegister } from 'react-native-event-listeners'
 
 export default function TabsLayout() {
   return (
     <Tabs screenOptions={{headerShown:false,
       tabBarHideOnKeyboard:true,
     }}>
-      <Tabs.Screen name="BookCategories" options={{ 
+      <Tabs.Screen name="BookCategories" options={{
         title: 'Kategoriler',
         tabBarIcon: ({color, size}) => (
           <FontAwesome name="book" size={size} color="#345457" />

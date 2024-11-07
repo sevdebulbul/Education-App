@@ -13,7 +13,6 @@ import { auth } from '../../../configs/FirebaseConfig';
 import { db } from '../../../configs/FirebaseConfig';
 import { setDoc, doc } from 'firebase/firestore';
 
-
 export default function SignUp(){
   const navigation = useNavigation();
   const router = useRouter();
@@ -27,7 +26,7 @@ export default function SignUp(){
     });
   }, []);
 
-  const onCreateAccount = () => { // Hesap oluşturma
+  const onCreateAccount = () => {
 
     if(!email || !password || !nickname){
       ToastAndroid.show('Lütfen tüm alanları doldurunuz!', ToastAndroid.TOP);
@@ -50,7 +49,7 @@ export default function SignUp(){
   });
   }
   
-  function addUser(){ // Firestore'a kullanıcı ekleme
+  function addUser(){
     setDoc(doc(db, "nicknames", nickname), {
       email: email,
       nickname: nickname,
@@ -60,26 +59,37 @@ export default function SignUp(){
       console.error("Error writing document: ", error);
     });
   }
-
   return (
-    <View style={styles.container}>
-        <TouchableOpacity 
-        onPress={()=> router.replace('/auth/sign-in')} // Geri gitme yönlendirmesi
-        style={styles.backbutton}>
+    <View style={{
+      backgroundColor: "white",
+      width: "100%",
+      height: "100%",}}>
+        <TouchableOpacity onPress={()=> router.replace('/auth/sign-in')} style={{
+        marginTop: 50,
+        marginLeft: 20,
+        marginBottom: -50,
+      }}>
         <MaterialIcons name="arrow-back-ios-new" size={24} color="#345457" />
       </TouchableOpacity>
-      <Text style={styles.headertext}
+      <Text style={{ fontSize: 20, 
+        textAlign: 'center', 
+        marginTop: 60, 
+        color: "#345457", 
+        backgroundColor:"white", 
+        fontStyle: "oblique", 
+        borderRadius: 20,}}
       >Hemen Kayıt Ol!</Text>
-      <View style={{marginTop: 10}}>
+      <View style={{marginTop: 10}}
+      >
         <Text style={styles.text}>Takma Ad:</Text>
         <TextInput 
           style={styles.input} 
           placeholder='Takma Adınızı Giriniz'
           marginLeft={40}
           value={nickname}
-          onChangeText={(nickname)=> setNickname(nickname)} 
+          onChangeText={(nickname)=> setNickname(nickname)}
           ></TextInput>
-        <SafeAreaView style={{marginTop:-60
+        <View style={{marginTop:-20
           }}>
           <Text style={styles.text}>Email:</Text>
           <TextInput 
@@ -88,9 +98,9 @@ export default function SignUp(){
             marginLeft={40}
             onChangeText={(value)=> setEmail(value)}
           ></TextInput>
-        </SafeAreaView>
+        </View>
         
-        <SafeAreaView style={{marginTop:-60}}>
+        <SafeAreaView style={{marginTop:-40}}>
           <Text style={styles.text}>Şifre:</Text>
           <TextInput 
             style={styles.input} 
@@ -105,14 +115,47 @@ export default function SignUp(){
       <TouchableOpacity onPress={() =>{
         onCreateAccount();
         addUser();
-      }} style={styles.button}>
-      <Text style={styles.textbutton}>
+      }} style={{
+       padding: 15,
+       backgroundColor: "#345457",
+        borderRadius: 30,
+        marginBottom: 20,
+        marginLeft:50,
+        marginRight:30,
+        marginTop: 20,
+        width: 300,
+        
+     }}>
+      <Text style={{
+        fontSize:20,
+        textAlign: 'center',
+        color: "white",
+      }}>
         Kayıt Ol
       </Text>
       </TouchableOpacity>
+
       <TouchableOpacity onPress={() => router.replace('/auth/sign-in')}
-      style={styles.buttonunderlined}>
-      <Text style={styles.textunderlined}>
+      style={{
+        padding: 15,
+        backgroundColor: "white",
+        borderColor: "#345457",
+        borderRadius: 20,
+        marginBottom: 20,
+        marginLeft:30,
+        marginRight:30,
+
+      }}>
+      <Text style={{
+        color: '#345457',
+        fontSize: 16,
+        textAlign: 'center',
+        marginTop: -10,
+        fontFamily: 'Roboto',
+        fontWeight: 'thin',
+        textDecorationLine: 'underline',
+        
+      }}>
         Giriş Yap
       </Text>
         </TouchableOpacity>
@@ -121,26 +164,6 @@ export default function SignUp(){
 }
 
 const styles = StyleSheet.create({
-  container:{
-    backgroundColor: "white",
-    width: "100%",
-    height: "100%",
-    marginTop: 20,
-  },
-  backbutton:{
-    marginTop: 70,
-    marginLeft: 20,
-    marginBottom: -60,
-  },
-  headertext:{
-    fontSize: 20, 
-    textAlign: 'center', 
-    marginTop: 60, 
-    color: "#345457", 
-    backgroundColor:"white", 
-    fontStyle: "oblique", 
-    borderRadius: 20,
-  },
   text: {
     fontSize: 20,
     marginLeft: 40,
@@ -157,38 +180,5 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 20,
     borderColor: "#345457",
-  },
-  button:{
-    padding: 15,
-    backgroundColor: "#345457",
-    borderRadius: 30,
-    marginBottom: 20,
-    marginLeft:50,
-    marginRight:30,
-    marginTop: 20,
-    width: 300,    
-  },
-  textbutton:{
-    fontSize:20,
-    textAlign: 'center',
-    color: "white",
-  },
-  buttonunderlined:{
-    padding: 15,
-    backgroundColor: "white",
-    borderColor: "#345457",
-    borderRadius: 20,
-    marginBottom: 20,
-    marginLeft:30,
-    marginRight:30,
-  },
-  textunderlined:{
-    color: '#345457',
-    fontSize: 16,
-    textAlign: 'center',
-    marginTop: -10,
-    fontFamily: 'Roboto',
-    fontWeight: 'thin',
-    textDecorationLine: 'underline',
-  },
+  }
 })

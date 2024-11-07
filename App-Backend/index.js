@@ -30,7 +30,7 @@ app.get('/categories', (req, res) => {
 });
 
 // MongoDB bağlantı URI
-const uri = "mongodb+srv://sevdebulbulwork:aXOvA7Pu5dF5xJ62@educationapp.szyno.mongodb.net/?retryWrites=true&w=majority&appName=EducationApp";
+const uri = "{mongodb-uri}";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
@@ -76,7 +76,6 @@ app.get('/newbooks', async (req, res) => {
     await client.close();
   }
 });
-
 
 // Kategorilere göre kitapları getirme
 app.get('/categories/:id', async (req, res) => {

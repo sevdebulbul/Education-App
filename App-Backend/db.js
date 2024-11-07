@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-const uri = "mongodb+srv://sevdebulbulwork:aXOvA7Pu5dF5xJ62@educationapp.szyno.mongodb.net/?retryWrites=true&w=majority&appName=EducationApp";
+const uri = "{mongodb-uri}";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,

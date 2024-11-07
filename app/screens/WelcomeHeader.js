@@ -7,10 +7,12 @@ import Entypo from '@expo/vector-icons/Entypo';
 export default function WelcomeHeader() {
   const router = useRouter();
   const user = auth.currentUser;
+
+  
   const pan = useRef(new Animated.Value(0)).current;
   const scale = useRef(new Animated.Value(1)).current; 
 
-  useEffect(() => { // Animasyon
+  useEffect(() => {
     Animated.loop(
       Animated.sequence([
         Animated.parallel([

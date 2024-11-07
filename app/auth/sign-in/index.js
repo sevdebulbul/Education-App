@@ -21,20 +21,22 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
   }); 
   }, []);
 
-  const auth = getAuth(); // Firebase authentication
+  const auth = getAuth();
 
-  const onSignIn = () =>{ 
+  const onSignIn = () =>{
+    
     if(!"email"&&!"password"){
       ToastAndroid.show("Lütfen tüm alanları doldurunuz", ToastAndroid.SHORT)
       return;
     } 
   
-  signInWithEmailAndPassword(auth, email, password) // Firebase ile giriş yapma
+  signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
-    // Giriş yapıldı
+    // Signed in 
     const user = userCredential.user;
     console.log(user.email, user.uid); 
     router.replace('/screens/(tabs)')
+    // ...
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -45,20 +47,38 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
     }
   });}
   return (
-    <View style={styles.container}>
-      <TouchableOpacity onPress={()=> router.back()} style={styles.backbutton}>
+    <View style={{
+      backgroundColor: "white",
+      width: "100%",
+      height: "100%",
+     
+    }}>
+      <TouchableOpacity onPress={()=> router.back()} style={{
+        marginTop: 50,
+        marginLeft: 20,
+        marginBottom: -50,
+      }}>
         <MaterialIcons name="arrow-back-ios-new" size={24} color="#345457" />
       </TouchableOpacity>
-      <Text style={styles.headertext}>
+      <Text style={{ fontSize: 20, 
+      textAlign: 'center', 
+      marginTop: 100,
+      color: "#345457",
+      backgroundColor:"white", 
+      fontStyle: "italic",
+      
+      borderRadius: 20,}}
+      >
         Tekrar Hoşgeldiniz!
       </Text>
+      
       <SafeAreaView>
       <Text style={styles.text}>
         Email:
       </Text>
       <TextInput 
       style={styles.input} 
-      onChangeText={(value)=> setEmail(value)} // Email değerini alır
+      onChangeText={(value)=> setEmail(value)}
       placeholder='Emailinizi Giriniz'
       marginLeft={40}
       >
@@ -67,28 +87,65 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
       <Text style={styles.text}>
         Şifre:
       </Text>
-      <SafeAreaView style={styles.safearea}>
+      <SafeAreaView style={{
+        marginBottom: 60,
+        marginTop: 5,
+      }}>
       <TextInput 
       style={styles.input} 
-      onChangeText={(value)=> setPassword(value)} // Şifre değerini alır
+      onChangeText={(value)=> setPassword(value)}
       secureTextEntry={true}
       placeholder='Şifrenizi giriniz'
       marginLeft={40}
       >
       </TextInput>
       </SafeAreaView>
-     <TouchableOpacity onPress={onSignIn} style={styles.button}>
-      <Text style={styles.textbutton}>
+
+     
+     <TouchableOpacity onPress={onSignIn} style={{
+       padding: 15,
+       backgroundColor: "#345457",
+       width: 300,
+        borderRadius: 30,
+        marginBottom: 20,
+        marginLeft:60,
+        marginRight:30,
+        
+     }}>
+      <Text style={{
+        fontSize:20,
+        textAlign: 'center',
+        color: "white",
+      }}>
         Giriş Yap
       </Text>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => router.replace('/auth/sign-up')}
-      style={styles.buttontext}>
-      <Text style={styles.underlinedtext}>
+      style={{
+        padding: 15,
+        backgroundColor: "white",
+        borderColor: "#345457",
+        borderRadius: 20,
+        marginBottom: 20,
+        marginLeft:30,
+        marginRight:30,
+
+      }}>
+      <Text style={{
+        color: '#345457',
+        fontSize: 16,
+        textAlign: 'center',
+        marginTop: -10,
+        fontFamily: 'Roboto',
+        fontWeight: 'thin',
+        textDecorationLine: 'underline',
+        
+      }}>
         Kayıt Ol
       </Text>
         </TouchableOpacity>
+      
         <TouchableOpacity onPress={() => router.replace('/screens/(tabs)')}
       style={{
         padding: 15,
@@ -108,33 +165,16 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
         Misafir Girişi
       </Text>
         </TouchableOpacity>
+     
+
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  container:{
-    backgroundColor: "white",
-      width: "100%",
-      height: "100%",
-      marginTop: 20,
-  },
-  backbutton:{
-    marginTop: 70,
-    marginLeft: 20,
-    marginBottom: -60,
-  },
-  headertext:{
-    fontSize: 20,
-    textAlign: 'center',
-    color: "#345457",
-    marginTop: 50,
-    marginBottom: 50,
-  },
   text: {
     fontSize: 20,
     textAlign: 'left',
-    marginLeft: 30,
     marginTop: 1,
     color: "#345457",
     backgroundColor: "white",
@@ -153,41 +193,5 @@ const styles = StyleSheet.create({
     elevation: 1,
     backgroundColor: "white",
   },
-  safearea:{
-    marginBottom: 60,
-    marginTop: 5,
-  },
-  button:{
-    padding: 15,
-    backgroundColor: "#345457",
-    width: 300,
-    borderRadius: 30,
-    marginBottom: 20,
-    marginLeft:60,
-    marginRight:30,        
-  },
-  buttontext:{
-    padding: 15,
-    backgroundColor: "white",
-    borderColor: "#345457",
-    borderRadius: 20,
-    marginBottom: 20,
-    marginLeft:30,
-    marginRight:30,
-  },
-  textbutton:{
-    fontSize:20,
-    textAlign: 'center',
-    color: "white",
-  },
-  underlinedtext:{
-    color: '#345457',
-    fontSize: 16,
-    textAlign: 'center',
-    marginTop: -10,
-    fontFamily: 'Roboto',
-    fontWeight: 'thin',
-    textDecorationLine: 'underline',
-        
-  }
+
 })

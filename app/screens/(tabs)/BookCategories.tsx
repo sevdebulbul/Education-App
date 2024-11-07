@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import WelcomeHeader from '../WelcomeHeader'
 import Categories from '../Categories'

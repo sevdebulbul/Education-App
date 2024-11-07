@@ -9,9 +9,9 @@ export default function ShowNewBook() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchNewBooks = async () => {  // Yeni kitapları çekme
+    const fetchNewBooks = async () => {
       try {
-        const response = await axios.get('http://192.168.0.30:8080/newbooks');
+        const response = await axios.get('http://{your-ip-address-here}/newbooks');
         setNewBooks(response.data);
       } catch (error) {
         console.error('API request failed: ', error);
@@ -19,6 +19,7 @@ export default function ShowNewBook() {
         setLoading(false);
       }
     };
+
     fetchNewBooks();
   }, []);
 
@@ -31,7 +32,7 @@ export default function ShowNewBook() {
     );
   }
 
-  const renderStars = (rating) => { // Yıldızları oluşturma
+  const renderStars = (rating) => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
       stars.push(
@@ -51,7 +52,7 @@ export default function ShowNewBook() {
       <WalkingAnimation />
       <FlatList
         data={newbooks}
-        keyExtractor={(item) => item._id?.toString() || Math.random().toString()} // Key oluşturma
+        keyExtractor={(item) => item._id?.toString() || Math.random().toString()}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
           <ImageBackground
@@ -65,6 +66,7 @@ export default function ShowNewBook() {
             <View style={styles.ratingContainer}>
               <Text style={styles.ratingText}>
                 {renderStars(item.rating)}
+                
               </Text>
             </View>
             <View style={styles.ribbon}>
@@ -74,6 +76,7 @@ export default function ShowNewBook() {
         )}
         contentContainerStyle={styles.listContainer}
       />
+      
     </View>
   );
 }

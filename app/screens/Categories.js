@@ -8,10 +8,10 @@ const Categories = () => {
   const [loading, setLoading] = useState(true);
   const router = useRouter();
 
-  useEffect(() => { // Kategorileri çekme
+  useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('http:/192.168.0.30:8080/categories');
+        const response = await axios.get('http://{your-ip-address-here}/categories');
         setCategories(response.data);
       } catch (error) {
         console.error('API request failed: ', error);
@@ -32,7 +32,7 @@ const Categories = () => {
     );
   }
 
-  const renderItem = ({ item }) => ( // Kategorileri listeleme
+  const renderItem = ({ item }) => (
     <TouchableOpacity 
       onPress={() => router.push({ pathname: `/screens/categoryDetail/[id]`, params: { id: item.id }})}  // Dinamik yönlendirme 
       style={styles.itemContainer}
@@ -58,8 +58,8 @@ const Categories = () => {
         keyExtractor={(item) => item.id.toString()}
         renderItem={renderItem} 
         contentContainerStyle={styles.listContainer}
-        numColumns={2} // 2 sütunlu liste
-        showsVerticalScrollIndicator={false} // Dikey kaydırma çubuğunu gizleme
+        numColumns={2} 
+        showsVerticalScrollIndicator={false} 
       />  
     </View>
   );
